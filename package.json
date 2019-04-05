@@ -1,26 +1,28 @@
 {
-  "name": "kostyniukrep",
+  "name": "package",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "echo",
-    "lint": "eslint index.js",
-    "deploy": "echo",
-    "build": "echo",
-    "test": "echo "
+    "start": "node index.js",
+    "lint": "eslint",
+    "deploy": "now alias --token=$SECRET_KEY NodeLabs-$TRAVIS_BRANCH.now.sh",
+    "build": "echo builded",
+    "test": "echo \"Error: no test specified\"" 
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/oleskostyniuk/KostyniukRep.git"
   },
-  "keywords": [
-    "1"
-  ],
-  "author": "oles",
+  "author": "Kostyniuk Oleksandr",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/oleskostyniuk/KostyniukRep/issues"
+    "url": "https://github.com/oleskostyniuk/KostyniukRep"
   },
-  "homepage": "https://github.com/oleskostyniuk/KostyniukRep#readme"
+  "homepage": "https://github.com/oleskostyniuk/KostyniukReps#readme",
+  "devDependencies": {
+    "eslint": "^5.14.1",
+    "now": "^14.0.0"
+  },
+  "dependencies": {}
 }
